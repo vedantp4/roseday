@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A romantic Rose Day tribute for someone special">
+    <title>For My Beautiful Rose 🌹</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Rose Petals Container -->
+    <div class="petals-container" id="petalsContainer"></div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <!-- Add your romantic song here - place the file in the music folder -->
+        <source src="music/Taylor Swift - Love Story (Lyrics).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-btn" id="musicBtn" title="Play romantic music">
+            <span class="music-icon">🎵</span>
+            <span class="music-text">Play Music</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="rose-icon">🌹</div>
+            <h1 class="title">Happy Rose Day</h1>
+            <p class="subtitle">A celebration of you, my love</p>
+        </header>
+
+        <!-- Love Quote Section -->
+        <section class="quote-section">
+            <div class="quote-container">
+                <span class="quote-mark">"</span>
+                <p class="quote-text">A rose can say 'I love you',<br>but a heart says so much more.</p>
+                <span class="quote-mark closing">"</span>
+            </div>
+        </section>
+
+        <!-- Personal Message Section -->
+        <section class="message-section">
+            <div class="message-card">
+                <h2 class="message-title">Why You Are My Rose</h2>
+                <div class="message-content">
+                    <p>
+                        My red rose,
+                    </p>
+                    <p>
+                        Among all the flowers in this world, you are my rose —
+                        my rare piece, my beautiful doll, and irreplaceable rose.
+                        Your smile is the morning just like the soft petals,
+                        and your laughter is the sweetest fragrance that fills my days.
+                    </p>
+                    <p>
+                        Just like a rose needs sunlight to bloom,
+                        I need you to feel alive. You are my warmth,
+                        my color in a world that was once grey.
+                    </p>
+                    <p>
+                        Every thorn you've faced has only made you stronger,
+                        more beautiful, more resilient. And I am endlessly grateful
+                        that of all the gardens in the world,
+                        you chose to bloom in mine.
+                    </p>
+                    <p class="signature">
+                        Forever yours ♥
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="gallery-section">
+            <h2 class="gallery-title">Our Beautiful Memories</h2>
+            <p class="gallery-subtitle">Every moment with you is a petal in our love story</p>
+
+            <div class="photo-gallery">
+                <!-- Photo 1 -->
+                <div class="photo-frame">
+                    <div class="photo-inner">
+                        <!-- Replace 'photos/photo1.jpg' with your actual image path -->
+                        <img src="photos/birthday.jpg" alt="Our beautiful memory" class="gallery-photo">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">It was your birthday... 💕</span>
+                        </div>
+                    </div>
+                    <div class="frame-decoration">🌹</div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="photo-frame">
+                    <div class="photo-inner">
+                        <img src="photos/Snapchat-371216303.jpg" alt="Our beautiful memory" class="gallery-photo">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">4 months together 💖</span>
+                        </div>
+                    </div>
+                    <div class="frame-decoration">🌹</div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="photo-frame">
+                    <div class="photo-inner">
+                        <img src="photos/Snapchat-1651800652.jpg" alt="Our beautiful memory" class="gallery-photo">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Forever in my heart its my birthday gift! 💗</span>
+                        </div>
+                    </div>
+                    <div class="frame-decoration">🌹</div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="photo-frame">
+                    <div class="photo-inner">
+                        <img src="photos/Snapchat-1257529240.jpg" alt="Our beautiful memory" class="gallery-photo">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">4 months together 💝</span>
+                        </div>
+                    </div>
+                    <div class="frame-decoration">🌹</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Rose Section -->
+        <section class="rose-section">
+            <h2 class="rose-title">A Rose That Blooms For You</h2>
+            <p class="rose-instruction">Click the rose to watch it bloom</p>
+
+            <div class="rose-container" id="roseContainer">
+                <div class="rose" id="rose">
+                    <!-- Rose Stem -->
+                    <div class="stem"></div>
+                    <div class="leaf left"></div>
+                    <div class="leaf right"></div>
+
+                    <!-- Rose Petals -->
+                    <div class="rose-bloom" id="roseBloom">
+                        <div class="petal petal-1"></div>
+                        <div class="petal petal-2"></div>
+                        <div class="petal petal-3"></div>
+                        <div class="petal petal-4"></div>
+                        <div class="petal petal-5"></div>
+                        <div class="petal petal-6"></div>
+                        <div class="petal petal-7"></div>
+                        <div class="petal petal-8"></div>
+                        <div class="rose-center"></div>
+                    </div>
+                </div>
+
+                <!-- Bloom Message -->
+                <div class="bloom-message" id="bloomMessage">
+                    <p>Just like this rose blooms for you,<br>my love grows stronger every day 💕</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Button Section -->
+        <section class="button-section">
+            <button class="love-button" id="loveButton">
+                <span class="button-text">For My Beautiful Rose 🌹</span>
+                <span class="button-glow"></span>
+            </button>
+        </section>
+
+        <!-- Ending Section -->
+        <section class="ending-section">
+            <div class="ending-content">
+                <div class="heart-divider">
+                    <span>♥</span>
+                    <span>♥</span>
+                    <span>♥</span>
+                </div>
+                <p class="ending-text">You make my world bloom every single day.</p>
+                <div class="floating-hearts">
+                    <span class="heart h1">💕</span>
+                    <span class="heart h2">💖</span>
+                    <span class="heart h3">💗</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Hidden Love Message Overlay -->
+    <div class="love-overlay" id="loveOverlay">
+        <div class="overlay-content">
+            <div class="overlay-roses">🌹🌹🌹</div>
+            <h2>I Love You</h2>
+            <p>More than words could ever express,<br>more than roses could ever show.</p>
+            <p class="small">You are my forever 💕</p>
+            <button class="close-button" id="closeOverlay">Close & Feel Loved</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
